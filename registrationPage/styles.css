@@ -1,0 +1,161 @@
+.page-container {
+    height: 100vh;
+    min-height: 812px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    font-family: Circe;
+
+    background-color: var(--green);
+}
+
+.title {
+    font-family: Fugue;
+    font-size: 44px;
+
+    color: var(--grey);
+}
+
+.content {
+    min-width: 375px;
+
+    margin-top: 29px;
+    padding: 65px 30px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: var(--grey);
+    border-radius: 64px 64px 0px 0px;
+}
+
+.inputs-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    padding: 7px 18px;
+    
+    display: flex;
+    align-items: center;
+
+    border-radius: 22px;
+
+    background: rgba(255, 255, 255, 0.99);
+}
+
+.input-container:not(:nth-child(1)) {
+    margin-top: 23px;
+}
+
+.input-icon-wrapp {
+    width: 30px;
+    height: 29px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    max-width: 239px;
+
+    margin-left: 12px;
+
+    border: none;
+
+    font-family: Circe;
+    color: var(--green);
+}
+
+.input::placeholder {
+    color: var(--dark-grey);
+}
+
+.icon-password {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.process-data-container {
+    width: 100%;
+    margin-top: 28px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkbox-process-data {
+    display: none;
+}
+
+.label-process-data {
+    display: flex;
+    font-size: 14px;
+    color: var(--green);
+}
+
+.label-process-data-container {
+    margin-left: 13px;
+
+    font-size: 14px;
+    color: var(--green);
+}
+
+.link {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.checkbox-process-data+label::before {
+    content: '';
+    display: block;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: var(--dark-grey);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    cursor: pointer;
+}
+
+.checkbox-process-data:checked+label::before {
+    background-color: var(--orange);
+    background-image: url("assets/check.svg");
+}
+
+.registration-button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 14px 24px 16px 25px;
+
+    border: none;
+    border-radius: 41px;
+
+    font-family: Fugue;
+    font-size: 21px;
+    color: var(--grey);
+
+    background-color: var(--orange);
+    box-shadow: 0px 4px 15px rgba(14, 82, 91, 0.4);
+
+    cursor: pointer;
+}
+
+.login-container {
+    margin-top: 23px;
+    margin-bottom: 64px;
+    font-size: 14px;
+    color: var(--green);
+}

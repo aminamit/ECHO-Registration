@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Fugue';
+    src: url('../fonts/fugue_regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/circe_regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
